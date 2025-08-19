@@ -1,0 +1,169 @@
+[root@GPS-Track ~]# history
+    1  tracking
+    2  top
+    3  ls
+    4  yum -y update
+    5  dnf install epel-release
+    6  yum clean all
+    7  yum -y install httpd mariadb-server mariadb
+    8  sudo dnf install https://rpms.remirepo.net/enterprise/remi-release-9.rpm
+    9  sudo dnf module list php
+   10  sudo dnf module reset php
+   11  sudo dnf module enable php:remi-8.0
+   12  dnf install -y php php-gd php-json php-mbstring php-mysqlnd php-xml php-opcache php-redis php-bcmath php-mysqlnd php-devel php-opcache php-dom php-mcrypt php-fpm php-zip
+   13  yum -y update
+   14  yum clean all
+   15  dnf install -y libXext libXrender
+   16  systemctl start httpd
+   17  systemctl enable httpd
+   18  systemctl start mariadb
+   19  systemctl enable mariadb
+   20  mysql -uroot -e "create database gpswox_web"
+   21  mysql -uroot -e "create database gpswox_traccar"
+   22  mysql
+   23  yum install unzip wget htop net-tools nano -y
+   24  curl -sS https://getcomposer.org/installer | php
+   25  mv composer.phar /usr/bin/composer
+   26  chmod +x /usr/bin/composer
+   27  sudo setenforce 0
+   28  sudo yum -y install redis
+   29  sudo systemctl start redis
+   30  sudo systemctl enable redis
+   31  curl -sL https://rpm.nodesource.com/setup_18.x -o nodesource_setup.sh
+   32  sudo yum -y install nodejs
+   33  sudo npm install pm2@latest -g
+   34  cd /var/www/
+   35  yum install unzip
+   36  chmod 777 -R /var/www/*
+   37  cd /var/www/html/socket
+   38  ls
+   39  unzip html.zip 
+   40  ls
+   41  chmod 777 -R /var/www/*
+   42  cd /var/www/html/socket
+   43  pm2 start socket.js
+   44  pm2 save
+   45  cd /var/www/html/
+   46  composer install
+   47  service httpd restart
+   48  php artisan config:clear && php artisan cache:clear && php artisan view:clear && composer run-script post-update-cmd
+   49  php artisan config:clear && php artisan cache:clear && php artisan view:clear && php artisan config:cache
+   50  chmod -R 777 /var/www/html
+   51  php artisan migrate
+   52  php artisan db:seed
+   53  cd /opt
+   54  wget https://github.com/traccar/traccar/releases/download/v5.0/traccar-linux-64-5.0.zip
+   55  unzip traccar-linux-64-5.0.zip
+   56  yum install -y java-1.8.0-openjdk
+   57  ls
+   58  unzip traccar
+   59  ls
+   60  chmod -R 777 traccar
+   61  ls
+   62  rm -rf traccar-linux-64-5.0.zip README.txt traccar.run
+   63  ls
+   64  rm -rf traccar.zip
+   65  chmod 777 -R /opt/*
+   66  sudo systemctl enable traccar
+   67  service traccar start
+   68  export EDITOR=/bin/nano
+   69  crontab -e
+   70  service httpd restart
+   71  sudo dnf install epel-release -y
+   72  sudo dnf install certbot python3-certbot-apache -y
+   73  sudo systemctl start httpd
+   74  sudo systemctl enable httpd
+   75  sudo systemctl reload httpd
+   76  sudo firewall-cmd --permanent --add-service=http
+   77  sudo firewall-cmd --permanent --add-service=https
+   78  sudo firewall-cmd --reload
+   79  sudo certbot --apache -d luminousgps.com -d www.luminousgps.com
+   80  sudo certbot --apache -d luminousgps.com
+   81  sudo certbot renew --dry-run
+   82  htop
+   83  top
+   84  htop
+   85  yum installed htop
+   86  yum install htop
+   87  htop
+   88  exit
+   89  top
+   90  htop
+   91  yum install htop
+   92  htop
+   93  ls
+   94  yum search htop
+   95  sudo yum install htop
+   96  htop
+   97  sudo yum update htop
+   98  sudo dnf install htop
+   99  dnf
+  100  htop
+  101  top
+  102  service httpd restart
+  103  sudo systemctl reload httpd
+  104  sudo systemctl status httpd
+  105  sudo systemctl status traccar
+  106  service httpd restart
+  107  sudo systemctl status httpd
+  108  htop
+  109  top
+  110  sudo systemctl status httpd
+  111  htop
+  112  top
+  113  sudo systemctl status httpd
+  114  sudo systemctl status traccar
+  115  top
+  116  sudo systemctl status httpd
+  117  sudo systemctl status traccar
+  118  sudo systemctl status php
+  119  php
+  120  cd /var/www/html
+  121  ls
+  122  php artisan config:clear && php artisan cache:clear && php artisan view:clear && composer run-script post-update-cmd
+  123  <div class="form-group position-relative">
+  124      {<div class="form-group position-relative"> Form::password('password', [
+  125          'class' => 'form-control pr-5', // Add Bootstrap padding-right
+  126          'placeholder' => trans('validation.attributes.password'),
+  127          'id' => 'sign-in-form-password'
+  128      ])         'id' => 'sign-in-form-password'}
+  129      <span class="toggle-password" onclick="togglePassword()" style="position: absolute; top: 50%; right: 15px; transform: translateY(-50%); cursor: pointer;">
+  130          👁️
+  131      </span>
+  132  </div>
+  133  <div class="form-group position-relative">
+  134      {<div class="form-group position-relative"> Form::password('password', [
+  135          'class' => 'form-control pr-5', // Add Bootstrap padding-right
+  136          'placeholder' => trans('validation.attributes.password'),
+  137          'id' => 'sign-in-form-password'
+  138      ])         'id' => 'sign-in-form-password'}
+  139      <span class="toggle-password" onclick="togglePassword()" style="position: absolute; top: 50%; right: 15px; transform: translateY(-50%); cursor: pointer;">
+  140          👁️
+  141      </span>
+  142  </div>
+  143  php artisan config:clear && php artisan cache:clear && php artisan view:clear
+  144  top
+  145  htop
+  146  exit
+  147  top
+  148  htop
+  149  df -h
+  150  exit
+  151  top
+  152  df -h
+  153  top
+  154  exit
+  155  top
+  156  exit
+  157  htop
+  158  top
+  159  exit
+  160  df -h
+  161  exit
+  162  sudo systemctl status traccar
+  163  sudo systemctl status httpd
+  164  htop
+  165  top
+  166  exit
+  167  sudo systemctl status traccar
+  168  history
