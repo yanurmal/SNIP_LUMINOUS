@@ -1,0 +1,17 @@
+[root@GPS-Track ~]# crontab -l
+0 * * * * php /var/www/html/artisan tracker:restart
+*/1 * * * * php /var/www/html/artisan events:check
+*/1 * * * * php /var/www/html/artisan alerts:check
+*/3 * * * * php /var/www/html/artisan reports:daily daily
+*/3 * * * * php /var/www/html/artisan reports:daily weekly
+*/3 * * * * php /var/www/html/artisan service:check
+*/1 * * * * php /var/www/html/artisan server:check
+*/3 * * * * php /var/www/html/artisan service:check_expire
+*/1 * * * * php /var/www/html/artisan backup:mysql
+0 0 * * * php /var/www/html/artisan logs:compress
+0 1 * * * php /var/www/html/artisan server:autoclean
+*/1 * * * * php /var/www/html/artisan insert:run
+*/1 * * * * /usr/sbin/service mariadb status || /usr/sbin/service mariadb start
+30 2 * * * /usr/bin/certbot renew >> /var/log/le-renew.log
+* * * * * php /var/www/html/current/artisan schedule:run >> /dev/null 2>&1
+@reboot /opt/traccar/bin/traccar start
